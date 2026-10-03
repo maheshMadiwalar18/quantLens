@@ -1,0 +1,22 @@
+model:
+  name: Qwen/Qwen2.5-1.5B-Instruct
+
+precisions:
+  - fp16
+  - int8
+  - 4bit
+
+batch_sizes:
+  - 1
+  - 4
+  - 8
+  - 16
+
+use_cache:
+  - true
+  - false
+
+context_lengths:
+  - 256
+  - 512
+  - 1024
